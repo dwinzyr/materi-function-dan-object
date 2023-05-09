@@ -1,29 +1,28 @@
-<!-- Kodingan dari sini jangan diubah -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soal 2</title>
+  <title>Soal 1</title>
 </head>
 <body>
-
-  <label for="input">Masukkan Nama Anda</label>
-  <input type="text" name="input" id="input">
-  <button onclick="hitung_huruf_vokal(input.value)">Hitung</button>
-  <br>
-  <label for="input">Jumlah Huruf Vokal Adalah</label>
-  <input type="text" name="hasil" id="hasil" disabled>  
-  <!-- Sampe Sini Jangan Diubah  -->
-
   <script>
-    const huruVokal = ["a", "i", "u", "e", "o"];
-    function hitung_huruf_vokal(huruf)
-    {
-      // masukan kodingan anda dari sini 
-      // tampilkan hasil pada input dengan id hasil
-    }
+    // buatlah sebuah function yang menerima sebuah parameter berupa object dan mengembalikan sebuah string
+    // Menampilkan "Nama saya John, umur saya 30 tahun, alamat saya di Jalan Pelesiran, dan saya punya hobby yaitu Gaming" 
+    /* 
+    Tulis kode function di bawah ini
+    */
+function introduce(){ 
+ var biodata = `Halo nama saya ${data.name} umur saya ${data.age} alamat saya ${data.addres} dan hobby saya ${data.hobby}`;
+ return biodata;
+}
+ 
+
+    // Isi data dengan data masing-masing
+   var data = {name : "Dinar Prayuda Kahuripan" , age : 16 , address : "Jalan Tanjung Pura" , hobby : "Gaming" }
+    var perkenalan = introduce(data);
+    document.write(perkenalan);
   </script>
 </body>
 </html>
